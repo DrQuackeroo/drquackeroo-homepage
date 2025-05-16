@@ -24,6 +24,64 @@
     provide additional details about my experience that I may not have mentioned.
     <br>In most cases, my resumé should already provide the most relevant details.
 </p>
+
+
+<div id="blender-importer" 
+style="display: flex; justify-content: center; align-items: center;">
+    <a href="/assets/blender_importer.webp">
+        <img src="/assets/blender_importer.webp"
+        alt="A screenshot of Blender above my custom C++ program"
+        style="width: 641; height: auto; margin-right: 20px;">
+    </a>
+
+    <div>
+        <h2>Blender Importer</h2>
+
+        <h3>5/15/2025</h3>
+        
+        <p>
+        <b>In the image:</b><br>
+        On the top, a simple Blender scene containing two meshes positioned
+        in front of a virtual camera.
+        On the bottom, a real-time DirectX 12 program I wrote in C++ correctly
+        interprets and displays the position of the meshes as they appear in Blender.
+        </p>
+
+        <p>
+        <b>Brief rationale:</b><br>
+        I can use Blender's powerful 3D artistry tools to create visually compelling data.
+        At the same time, I still have the flexibility to display that data
+        however I want at a fine-tuned speed appropriate for a video game.
+        I don't need to recreate well-established editing tools and I can spend
+        more time making content that users enjoy.<br>
+        </p>
+
+        <p>
+        <b>Challenges I faced:</b><br>
+        I had to make a custom coordinate-system transformation pipeline using
+        the absolute best of my linear algebra skills.
+        I realized the hard way that Blender, glTF (the intermediate
+        file format), and DirectX 12 were each made by many different people, and each understands
+        the coordinates that make up graphics data differently.
+        I had to carefully review data and specifications from all three of Blender, glTF,
+        and DirectX 12 and double-check my assumptions of how each operates.<br><br>
+        Debugging my initial code was difficult because I was limited in my ability to visualize errors;
+        it either looks correct or looks like a random lump of triangles,
+        with no hints as to what I'm doing wrong.
+        Thankfully, the PIX for Windows GPU debugger helped in this regard, specifically its
+        ability to display meshes in the input assembler stage before the GPU processes them.
+        </p>
+
+        <p>
+        <b>What's next:</b><br>
+        There's a lot more to import from Blender than just meshes and textures.
+        I'm looking forward to getting animated skeletons working.
+        I also need to author and import custom data that is pertinent
+        to a game engine, like positional markers for where objects should spawn or keyframe
+        markers to trigger in-game events at just the right time during animations.
+        </p>
+    </div>
+</div>
     
 </body>
 </html>
